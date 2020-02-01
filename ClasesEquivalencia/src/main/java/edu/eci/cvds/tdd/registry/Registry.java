@@ -19,7 +19,6 @@ public class Registry {
 			res=RegisterResult.VALID;
 		}
 		
-		
         return res;
     }
 }

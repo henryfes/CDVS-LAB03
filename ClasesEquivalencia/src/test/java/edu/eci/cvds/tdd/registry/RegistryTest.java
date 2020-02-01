@@ -42,7 +42,7 @@ public class RegistryTest {
     }
     
     @Test
-    public void Muerto() {
+    public void isNotAlive() {
     	Person prueba = new Person("Henry",154616,25,Gender.MALE,false,false);
     	 RegisterResult result = registry.registerVoter(prueba);
     	Assert.assertEquals(RegisterResult.DEAD, result);
