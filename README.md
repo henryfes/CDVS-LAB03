@@ -1,3 +1,3 @@
-# CDVS-LAB03
+# CVDS-LAB03
 ## Comado para ejecutar las pruebas
 'mvn test'
