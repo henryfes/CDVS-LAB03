@@ -3,7 +3,8 @@ package edu.eci.cvds.tdd.registry;
 public class Registry {
 	public RegisterResult registerVoter(Person p) {
 		RegisterResult res;
-		if (p.getAge()<18) {
+		
+		if (p.getAge() < 18) {
 			res=RegisterResult.UNDERAGE;
 		}
 		else if (p.getAge()<0 || p.getAge()>125) {
