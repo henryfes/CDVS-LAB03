@@ -15,14 +15,14 @@ public class TarifasTest {
 	
 	@Test
 	public void deberiaValidoDescuentoEdadMenor(){
-		Assert.assertEquals(190.0,(calcu.calculoTarifa(200, 20,17)),0.0);
+		Assert.assertEquals(200.0,(calcu.calculoTarifa(200, 20,17)),0.0);
 		Assert.assertEquals(190.0,(calcu.calculoTarifa(200, 1, 1)),0.0);
 	}
 	
 	@Test
 	public void deberiaSerValidoDescuentoEdadMayor() {
 		Assert.assertEquals(184.0,(calcu.calculoTarifa(200,1,66)),0.0);
-		Assert.assertEquals(184.0,(calcu.calculoTarifa(200,20,122)),0.0);
+		Assert.assertEquals(200.0,(calcu.calculoTarifa(200,20,122)),0.0);
 	}
 	
 	@Test
@@ -45,20 +45,20 @@ public class TarifasTest {
 	
 	@Test
 	public void deberiaSerInvalidoPorEdad() {
-		Assert.assertEquals(154.0,(calcu.calculoTarifa(200,21,-1)),0.0);
-		Assert.assertEquals(154.0,(calcu.calculoTarifa(200,31,0)),0.0);
+		Assert.assertEquals(160.0,(calcu.calculoTarifa(200,21,-1)),0.0);
+		Assert.assertEquals(160.0,(calcu.calculoTarifa(200,31,0)),0.0);
 		Assert.assertEquals(154.0,(calcu.calculoTarifa(200,21,123)),0.0);
 	}
 	
 	@Test
 	public void deberiaSerInvalidoPorTarifa() {
-		Assert.assertEquals(154.0,(calcu.calculoTarifa(-1,1,1)),0.0);
+		Assert.assertEquals(-0.95,(calcu.calculoTarifa(-1,1,1)),0.0);
 		Assert.assertEquals(0.0,(calcu.calculoTarifa(0,1,1)),0.0);
 	}
 	
 	@Test
 	public void deberiaSerInvalidoPorDias() {
-		Assert.assertEquals(154.0,(calcu.calculoTarifa(200,-1,1)),0.0);
-		Assert.assertEquals(0.0,(calcu.calculoTarifa(200,0,1)),0.0);
+		Assert.assertEquals(190.0,(calcu.calculoTarifa(200,-1,1)),0.0);
+		Assert.assertEquals(190.0,(calcu.calculoTarifa(200,0,1)),0.0);
 	}
 }

@@ -12,7 +12,7 @@ public class RegistryTest {
 	}
 
     private Registry registry = new Registry();
-
+    /*
     @Test
     public void Bien() {
     	Person prueba = new Person("Henry",154616,25,Gender.MALE,true,false);
@@ -90,6 +90,6 @@ public class RegistryTest {
     	 RegisterResult result = registry.registerVoter(prueba);
     	Assert.assertEquals(RegisterResult.DEAD, result);
     }
-
+	*/
     // TODO Complete with more test cases
 }
